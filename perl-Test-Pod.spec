@@ -17,7 +17,6 @@ BuildRequires:	perl-devel
 %endif
 BuildRequires:	perl-Pod-Simple
 BuildRequires:	perl-Test-Builder-Tester
-BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description 
 Check POD files for errors or warnings in a test file, using Pod::Simple to do
