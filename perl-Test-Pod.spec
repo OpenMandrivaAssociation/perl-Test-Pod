@@ -1,7 +1,7 @@
 %define	module	Test-Pod
 %define	name	perl-%{module}
-%define version 1.26
-%define release %mkrel 4
+%define version 1.40
+%define release %mkrel 1
 
 Summary: 	Check for POD errors in files
 Name:		%{name}
