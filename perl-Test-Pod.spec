@@ -1,16 +1,19 @@
 %define upstream_name       Test-Pod
-%define upstream_version    1.40
+%define upstream_version 1.41
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
 Release:    %mkrel 1
+
 Summary: 	Check for POD errors in files
-License: 	GPL or Artistic
+License: 	GPL+ or Artistic
 Group: 		Development/Perl
 Url:        http://search.cpan.org/dist/%{upstream_name}
-Source:     http://www.cpan.org/modules/by-module/Test/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:    http://www.cpan.org/modules/by-module/Test/%{upstream_name}-%{upstream_version}.tar.gz
+
 BuildRequires:	perl-Pod-Simple >= 3.07
 BuildRequires:	perl-Test-Builder-Tester
+
 BuildArch:	noarch
 BuildRoot:	%{_tmppath}/%{name}-%{version}
 
@@ -19,18 +22,18 @@ Check POD files for errors or warnings in a test file, using Pod::Simple to do
 the heavy lifting.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version} 
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
-%{__perl} Makefile.PL INSTALLDIRS=vendor
-%make
-
-%install
-rm -rf %{buildroot}
-%makeinstall_std
+%{__perl} Build.PL installdirs=vendor
+./Build
 
 %check
-%make test
+./Build test
+
+%install
+%{__rm} -rf %{buildroot}
+./Build install destdir=%{buildroot}
 
 %clean 
 rm -rf %{buildroot}
@@ -40,4 +43,3 @@ rm -rf %{buildroot}
 %doc Changes
 %{perl_vendorlib}/Test
 %{_mandir}/*/*
-
