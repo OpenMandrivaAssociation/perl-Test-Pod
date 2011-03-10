@@ -1,9 +1,9 @@
 %define upstream_name       Test-Pod
-%define upstream_version 1.44
+%define upstream_version 1.45
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 2
+Release:    %mkrel 1
 
 Summary: 	Check for POD errors in files
 License: 	GPL+ or Artistic
