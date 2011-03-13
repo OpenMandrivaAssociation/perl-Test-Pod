@@ -10,10 +10,9 @@ License: 	GPL+ or Artistic
 Group: 		Development/Perl
 Url:        http://search.cpan.org/dist/%{upstream_name}
 Source0:    http://www.cpan.org/modules/by-module/Test/%{upstream_name}-%{upstream_version}.tar.gz
-
-BuildRequires:	perl-Pod-Simple >= 3.07
-BuildRequires:	perl-Test-Builder-Tester
-
+BuildRequires:	perl(Module::Build)
+BuildRequires:	perl(Pod::Simple) >= 3.07
+BuildRequires:	perl(Test::Builder::Tester)
 BuildArch:	noarch
 BuildRoot:	%{_tmppath}/%{name}-%{version}
 
