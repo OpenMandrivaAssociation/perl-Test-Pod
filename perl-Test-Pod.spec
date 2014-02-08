@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 5
+Release:    6
 
 Summary: 	Check for POD errors in files
 License: 	GPL+ or Artistic
