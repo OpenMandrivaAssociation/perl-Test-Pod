@@ -1,2 +1,4 @@
+removed_sources:
+  Test-Pod-1.45.tar.gz: 5f44b590877a33b7b09623dded15ee9c1dae224f
 sources:
-  "Test-Pod-1.45.tar.gz": 5f44b590877a33b7b09623dded15ee9c1dae224f
+  Test-Pod-1.48.tar.gz: e6c157c12e60ceb4c9d1365996bbfa9de0292533

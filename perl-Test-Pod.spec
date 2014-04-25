@@ -1,10 +1,11 @@
 %define modname	Test-Pod
-%define modver	1.45
+%define modver 1.48
 
 Summary:	Check for POD errors in files
+
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	9
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}
@@ -35,4 +36,5 @@ the heavy lifting.
 %doc Changes
 %{perl_vendorlib}/Test
 %{_mandir}/man3/*
+
 
