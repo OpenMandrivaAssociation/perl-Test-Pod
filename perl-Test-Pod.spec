@@ -14,6 +14,7 @@ BuildArch:	noarch
 BuildRequires:	perl(Module::Build)
 BuildRequires:	perl(Pod::Simple) >= 3.07
 BuildRequires:	perl(Test::Builder::Tester)
+BuildRequires:	perl(JSON::PP)
 
 %description 
 Check POD files for errors or warnings in a test file, using Pod::Simple to do
