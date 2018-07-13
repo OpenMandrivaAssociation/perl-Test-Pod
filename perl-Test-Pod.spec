@@ -14,6 +14,7 @@ Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}
 Source0:	http://www.cpan.org/modules/by-module/Test/%{modname}-%{modver}.tar.gz
 BuildArch:	noarch
+BuildRequires:	perl(ExtUtils::MakeMaker)
 BuildRequires:	perl(Pod::Simple) >= 3.07
 BuildRequires:	perl(Test::Builder::Tester)
 BuildRequires:	perl(JSON::PP)
