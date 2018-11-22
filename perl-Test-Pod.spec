@@ -1,5 +1,5 @@
 %define modname	Test-Pod
-%define modver 1.51
+%define modver 1.52
 
 # Avoid nasty circular dependency
 %define dont_gprintify 1
@@ -8,10 +8,10 @@ Summary:	Check for POD errors in files
 
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	3
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{modname}
+Url:		http://metacpan.org/pod/Test::Pod
 Source0:	http://www.cpan.org/modules/by-module/Test/%{modname}-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl(ExtUtils::MakeMaker)
