@@ -4,6 +4,8 @@
 # Avoid nasty circular dependency
 %define dont_gprintify 1
 
+%{load:%{_usrlibrpm}/macros.d/macros.perl}
+
 Summary:	Check for POD errors in files
 
 Name:		perl-%{modname}
