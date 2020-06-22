@@ -8,7 +8,7 @@ Summary:	Check for POD errors in files
 
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	1
+Release:	2
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://metacpan.org/pod/Test::Pod
@@ -27,7 +27,7 @@ the heavy lifting.
 %setup -qn %{modname}-%{modver}
 
 %build
-%__perl Makefile.PL installdirs=vendor
+perl Makefile.PL installdirs=vendor
 %make_build
 
 %check
