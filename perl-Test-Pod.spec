@@ -16,6 +16,7 @@ Group:		Development/Perl
 Url:		https://metacpan.org/pod/Test::Pod
 Source0:	http://www.cpan.org/modules/by-module/Test/%{modname}-%{modver}.tar.gz
 BuildArch:	noarch
+BuildRequires:	make
 BuildRequires:	perl(ExtUtils::MakeMaker)
 BuildRequires:	perl(Pod::Simple) >= 3.07
 BuildRequires:	perl(Test::Builder::Tester)
