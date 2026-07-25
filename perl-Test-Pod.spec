@@ -9,12 +9,12 @@
 Summary:	Check for POD errors in files
 
 Name:		perl-%{modname}
-Version:	%perl_convert_version %{modver}
-Release:	7
+Version:	%{modver}
+Release:	8
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
-Url:		https://metacpan.org/pod/Test::Pod
-Source0:	http://www.cpan.org/modules/by-module/Test/%{modname}-%{modver}.tar.gz
+Url:		https://github.com/perl-pod/test-pod
+Source0:	https://cpan.metacpan.org/authors/id/E/ET/ETHER/Test-Pod-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	make
 BuildRequires:	perl(ExtUtils::MakeMaker)
